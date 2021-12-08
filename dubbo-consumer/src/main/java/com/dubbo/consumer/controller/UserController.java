@@ -18,4 +18,10 @@ public class UserController {
         String welcome = userService.sayHello(name);
         return welcome;
     }
+    @RequestMapping("/getName")
+    @ResponseBody
+    public String getName(String name) {
+        String welcome = userService.getUserName(name);
+        return welcome;
+    }
 }

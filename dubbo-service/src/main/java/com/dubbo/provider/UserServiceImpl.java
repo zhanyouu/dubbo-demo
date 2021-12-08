@@ -7,4 +7,9 @@ public class UserServiceImpl implements UserService {
     public String sayHello(String name) {
         return "hello " + name + "!";
     }
+
+    @Override
+    public String getUserName(String name) {
+        return name;
+    }
 }
