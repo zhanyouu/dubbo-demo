@@ -12,6 +12,6 @@
     <bean id="userService" class="com.dubbo.provider.UserServiceImpl"/>
     <dubbo:service interface="com.dubbo.api.UserService" ref="userService"/>
 
-<!--    <bean id="orderService" class="com.dubbo.provider.OrderServiceImpl"/>-->
+    <bean id="orderService" class="com.dubbo.provider.OrderServiceImpl"/>
     <dubbo:service interface="com.dubbo.api.OrderService" ref="orderService"/>
 </beans>
