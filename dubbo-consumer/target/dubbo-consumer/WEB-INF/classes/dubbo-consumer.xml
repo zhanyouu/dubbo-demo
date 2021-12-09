@@ -7,7 +7,9 @@
     <dubbo:application name="dubbo-consumer"/>
     <dubbo:registry address="zookeeper://172.30.252.96:2181"/>
     <dubbo:consumer check="false"/>
-
+    <!-- 引用服务配置 -->
+    <dubbo:reference id="userService" interface="com.dubbo.api.UserService" cluster="failfast" check="false"/>
+    <dubbo:reference id="orderService" interface="com.dubbo.api.OrderService" cluster="failfast" check="false"/>
     <!-- 导入dubbo配置 -->
     <import resource="classpath*:dubbo-api.xml"/>
 </beans>
